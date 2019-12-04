@@ -1,0 +1,9 @@
+[
+    {
+        "pk":1,
+        "model":"main.project",
+        "fields":{
+            "title": "I love you ♥"
+        }
+    }
+]
