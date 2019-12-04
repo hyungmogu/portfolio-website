@@ -3,14 +3,14 @@
 {% block body_content %}
     <div class="container">
         <div class="d-flex flex-wrap">
-            {% for portfolio in portfolios %}
+            {% for project in projects %}
                 <div class="col-md-4 mt-3">
                     <div class="card text-center">
-                        <img class="card-img-top" src="{{ portfolio.image_main|default_if_none:'http://via.placeholder.com/350x200' }}" alt="{{ portfolio.title }}">
+                        <img class="card-img-top" src="{{ project.image_main|default_if_none:'http://via.placeholder.com/350x200' }}" alt="{{ project.title }}">
                         <div class="card-body">
-                            <h5 class="card-title">{{ portfolio.title }}</h5>
-                            <p class="card-text">{{ portfolio.summary }}</p>
-                            <a href="{% url 'portfolio_detail' portfolio_pk=portfolio.pk %}" class="btn btn-block btn-primary">See Detail</a>
+                            <h5 class="card-title">{{ project.title }}</h5>
+                            <p class="card-text">{{ project.summary }}</p>
+                            <a href="{% url 'project_detail' project_pk=project.pk %}" class="btn btn-block btn-primary">See Detail</a>
                         </div>
                     </div>
                 </div>

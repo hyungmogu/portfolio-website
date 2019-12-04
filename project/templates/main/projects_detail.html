@@ -2,26 +2,26 @@
 
 {% block body_content %}
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light" style="min-height: 300px;">
-        <h2>{{ portfolio.title }}</h2>
+        <h2>{{ project.title }}</h2>
         <p>
-            {{ portfolio.summary }}
+            {{ project.summary }}
         </p>
         <div>
-            {% if portfolio.url_demo %}
-                <a href="{{ portfolio.url_demo }}" class="btn btn-primary">See Demo</a>
+            {% if project.url_demo %}
+                <a href="{{ project.url_demo }}" class="btn btn-primary">See Demo</a>
             {% endif %}
-            {% if portfolio.url_source_code %}
-                <a href="{{ portfolio.url_source_code }}" class="btn btn-outline-secondary">Source Code</a>
+            {% if project.url_source_code %}
+                <a href="{{ project.url_source_code }}" class="btn btn-outline-secondary">Source Code</a>
             {% endif %}
         </div>
     </div>
     <article class="container">
-    {% if portfolio.tools_used %}
+    {% if project.tools_used %}
         <section class="row mb-3">
             <div class="col">
                 <h3>Tools Used</h3>
                 <ul>
-                    {% for tool in portfolio.tools_used %}
+                    {% for tool in project.tools_used %}
                         <li><strong>{{tool.label}}</strong>: {{tool.keywords.all|join", " }}</li>
                     {% endfor %}
                 </ul>
@@ -29,23 +29,23 @@
         </section>
     {% endif %}
 
-    {% if portfolio.challenges %}
+    {% if project.challenges %}
         <section class="row mb-3">
             <div class="col">
                 <h3>Challenges</h3>
                 <div>
-                    {{ portfolio.challenges|safe }}
+                    {{ project.challenges|safe }}
                 </div>
             </div>
         </section>
     {% endif %}
 
-    {% if portfolio.result %}
+    {% if project.result %}
         <section class="row mb-3">
             <div class="col">
                 <h3>Result</h3>
                 <div>
-                    {{ portfolio.result|safe }}
+                    {{ project.result|safe }}
                 </div>
             </div>
         </section>
@@ -53,11 +53,11 @@
 
     <section class="row mb-3">
         <div class="col text-center">
-            {% if portfolio.url_demo %}
-                <a href="{{ portfolio.url_demo }}" class="btn btn-primary">See Demo</a>
+            {% if project.url_demo %}
+                <a href="{{ project.url_demo }}" class="btn btn-primary">See Demo</a>
             {% endif %}
-            {% if portfolio.url_source_code %}
-                <a href="{{ portfolio.url_source_code }}" class="btn btn-outline-secondary">Source Code</a>
+            {% if project.url_source_code %}
+                <a href="{{ project.url_source_code }}" class="btn btn-outline-secondary">Source Code</a>
             {% endif %}
         </div>
     </section>
