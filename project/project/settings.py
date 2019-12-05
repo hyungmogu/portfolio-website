@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'main',
 ]
 
 MIDDLEWARE = [
@@ -120,6 +121,10 @@ USE_TZ = True
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
+FIXTURE_DIRS = (
+   os.path.join(BASE_DIR,'fixtures'),
+)
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
