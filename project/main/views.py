@@ -1,9 +1,7 @@
-from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.shortcuts import render, get_object_or_404
+from django.views.generic import TemplateView, DetailView
 
 from . import models
-
-# Create your views here.
 
 class HomeView(TemplateView):
     models=models.Project
@@ -15,3 +13,15 @@ class HomeView(TemplateView):
         context['projects'] = projects
 
         return context
+
+class ProjectView(DetailView):
+    models=models.Project
+    template_name = 'main/projects_detail.html'
+
+    def get(self, request, pk):
+        project = get_object_or_404(
+            models.Project,
+            pk=pk)
+
+        return render(request, self.template_name, {
+            'project': project})
