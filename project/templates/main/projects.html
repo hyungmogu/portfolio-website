@@ -10,7 +10,7 @@
                         <div class="card-body">
                             <h5 class="card-title">{{ project.title }}</h5>
                             <p class="card-text">{{ project.summary }}</p>
-                            <a href="{% url 'project_detail' project_pk=project.pk %}" class="btn btn-block btn-primary">See Detail</a>
+                            <a href="{% url 'project' pk=project.pk %}" class="btn btn-block btn-primary">See Detail</a>
                         </div>
                     </div>
                 </div>
