@@ -22,7 +22,7 @@
                 <h3>Tools Used</h3>
                 <ul>
                     {% for tool in project.tools_used %}
-                        <li><strong>{{tool.label}}</strong>: {{tool.keywords.all|join", " }}</li>
+                        <li><strong>{{tool.label}}</strong>: {{tool.keywords.all|join:", " }}</li>
                     {% endfor %}
                 </ul>
             </div>
