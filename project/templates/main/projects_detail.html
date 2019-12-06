@@ -21,11 +21,9 @@
             <section class="row mb-3">
                 <div class="col">
                     <h3>Tools Used</h3>
-                    <ul>
-                        {% for tool in project.tools_used %}
-                            <li><strong>{{tool.label}}</strong>: {{tool.keywords.all|join:", " }}</li>
-                        {% endfor %}
-                    </ul>
+                    <div>
+                        {{ project.tools_used|safe }}
+                    </div>
                 </div>
             </section>
         {% endif %}

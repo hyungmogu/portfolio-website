@@ -6,6 +6,7 @@ class Project(models.Model):
     image_main = models.URLField()
     url_demo = models.URLField()
     url_source_code = models.URLField()
+    tools_used = models.TextField()
     challenges = models.TextField()
     result = models.TextField()
 

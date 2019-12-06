@@ -19,6 +19,7 @@ class Migration(migrations.Migration):
                 ('summary', models.CharField(max_length=255)),
                 ('url_demo', models.URLField()),
                 ('url_source_code', models.URLField()),
+                ('tools_used', models.TextField()),
                 ('challenges', models.TextField()),
                 ('result', models.TextField()),
                 ('image_main', models.URLField()),
