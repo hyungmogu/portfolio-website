@@ -1,18 +1,20 @@
 {% extends 'layout.html' %}
 
 {% block body_content %}
-    <article class="d-flex flex-wrap">
-        {% for project in projects %}
-            <div class="col-md-4 mt-3">
-                <div class="card text-center">
-                    <img class="card-img-top" src="{{ project.image_main|default_if_none:'http://via.placeholder.com/350x200' }}" alt="{{ project.title }}">
-                    <div class="card-body">
-                        <h5 class="card-title">{{ project.title }}</h5>
-                        <p class="card-text">{{ project.summary }}</p>
-                        <a href="{% url 'project' pk=project.pk %}" class="btn btn-block btn-primary">See Detail</a>
+    <div class="container">
+        <article class="d-flex flex-wrap">
+            {% for project in projects %}
+                <div class="col-md-4 mt-3">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="{{ project.image_main|default_if_none:'http://via.placeholder.com/350x200' }}" alt="{{ project.title }}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ project.title }}</h5>
+                            <p class="card-text">{{ project.summary }}</p>
+                            <a href="{% url 'project' pk=project.pk %}" class="btn btn-block btn-primary">See Detail</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        {% endfor %}
-    </article>
+            {% endfor %}
+        </article>
+    </div>
 {% endblock %}

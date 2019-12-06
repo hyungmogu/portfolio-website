@@ -16,49 +16,51 @@
         </div>
     </div>
 
-    {% if project.tools_used %}
-        <section class="row mb-3">
-            <div class="col">
-                <h3>Tools Used</h3>
-                <ul>
-                    {% for tool in project.tools_used %}
-                        <li><strong>{{tool.label}}</strong>: {{tool.keywords.all|join:", " }}</li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </section>
-    {% endif %}
-
-    {% if project.challenges %}
-        <section class="row mb-3">
-            <div class="col">
-                <h3>Challenges</h3>
-                <div>
-                    {{ project.challenges|safe }}
+    <div class="container">
+        {% if project.tools_used %}
+            <section class="row mb-3">
+                <div class="col">
+                    <h3>Tools Used</h3>
+                    <ul>
+                        {% for tool in project.tools_used %}
+                            <li><strong>{{tool.label}}</strong>: {{tool.keywords.all|join:", " }}</li>
+                        {% endfor %}
+                    </ul>
                 </div>
-            </div>
-        </section>
-    {% endif %}
+            </section>
+        {% endif %}
 
-    {% if project.result %}
-        <section class="row mb-3">
-            <div class="col">
-                <h3>Result</h3>
-                <div>
-                    {{ project.result|safe }}
+        {% if project.challenges %}
+            <section class="row mb-3">
+                <div class="col">
+                    <h3>Challenges</h3>
+                    <div>
+                        {{ project.challenges|safe }}
+                    </div>
                 </div>
+            </section>
+        {% endif %}
+
+        {% if project.result %}
+            <section class="row mb-3">
+                <div class="col">
+                    <h3>Result</h3>
+                    <div>
+                        {{ project.result|safe }}
+                    </div>
+                </div>
+            </section>
+        {% endif %}
+
+        <section class="row mb-3">
+            <div class="col text-center">
+                {% if project.url_demo %}
+                    <a href="{{ project.url_demo }}" class="btn btn-primary">See Demo</a>
+                {% endif %}
+                {% if project.url_source_code %}
+                    <a href="{{ project.url_source_code }}" class="btn btn-outline-secondary">Source Code</a>
+                {% endif %}
             </div>
         </section>
-    {% endif %}
-
-    <section class="row mb-3">
-        <div class="col text-center">
-            {% if project.url_demo %}
-                <a href="{{ project.url_demo }}" class="btn btn-primary">See Demo</a>
-            {% endif %}
-            {% if project.url_source_code %}
-                <a href="{{ project.url_source_code }}" class="btn btn-outline-secondary">Source Code</a>
-            {% endif %}
-        </div>
-    </section>
+    </div>
 {% endblock %}
