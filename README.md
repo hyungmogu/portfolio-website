@@ -55,12 +55,30 @@ brew install awsebcli
 eb --version
 ```
 
+### PART 3: Setting up security credentials
+1. Visit [this link](https://console.aws.amazon.com/iam/home?region=us-west-2#/security_credentials)
+
+2. Select `Access keys`
+
+<div style="text-align: center;">
+    <img src="https://user-images.githubusercontent.com/6856382/70324494-78822980-17e4-11ea-862a-5a7ea37f892f.png">
+</div>
+
+
+3. Select `Create New Access Key`
+
+4. Copy `Access Key ID` and `Secret Access Key`
+
+<div style="text-align: center;">
+    <img src="https://user-images.githubusercontent.com/6856382/70324622-d7e03980-17e4-11ea-889e-4ca0e5cb6b07.png">
+</div>
+
 ### PART 2: Deploy Your Site With the EB CLI
 
 1. Initialize your EB CLI repository with the eb init command:
 
 ```
-eb init -p python-3.7 portfolio-site
+eb init -p python-3.6 portfolio-site
 ```
 
 2. Initialize your EB CLI repository `eb init`
