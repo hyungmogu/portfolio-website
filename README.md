@@ -37,12 +37,30 @@ option_settings:
 - WSGIPath, specifies the location of the WSGI script that Elastic Beanstalk uses to start your application.
 
 
+### PART 2: Installing AWS EB CLI
+
+**Mac OS**
+1. Update homebrew to latest version
+```
+brew update
+```
+
+2. Install aws eb cli
+```
+brew install awsebcli
+```
+
+3. Verify installation
+```
+eb --version
+```
+
 ### PART 2: Deploy Your Site With the EB CLI
 
 1. Initialize your EB CLI repository with the eb init command:
 
 ```
-eb init -p python-3.6 portfolio-site
+eb init -p python-3.7 portfolio-site
 ```
 
 2. Initialize your EB CLI repository `eb init`
