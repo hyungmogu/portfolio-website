@@ -7,3 +7,7 @@
 4. In `project` folder, run app by typing `python manage.py runserver`
 5. View the project by opening a browser like Chrome and entering the provided url (i.e. `http://127.0.0.1:8000/`)
 6. When done, exit by pressing `Ctrl`+`C` and virtual environment by typing `exit`
+
+## Accessing Admin Panel
+1. In `project` folder, run `python manage.py createsuperuser` if admin user not setup
+2. Access admin panel by entering the extension `/admin` to main url (i.e. `http://127.0.0.1:8000/admin`)
