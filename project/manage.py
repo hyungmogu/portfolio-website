@@ -1,17 +1,8 @@
 #!/usr/bin/env python
-<<<<<<< HEAD
-"""Django's command-line utility for administrative tasks."""
-import os
-import sys
-
-
-def main():
-=======
 import os
 import sys
 
 if __name__ == '__main__':
->>>>>>> fix: downgrade to django 2.1.1
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.settings')
     try:
         from django.core.management import execute_from_command_line
@@ -22,10 +13,3 @@ if __name__ == '__main__':
             "forget to activate a virtual environment?"
         ) from exc
     execute_from_command_line(sys.argv)
-<<<<<<< HEAD
-
-
-if __name__ == '__main__':
-    main()
-=======
->>>>>>> fix: downgrade to django 2.1.1
