@@ -30,7 +30,7 @@ mkdir .ebextensions
 ```
 option_settings:
   aws:elasticbeanstalk:container:python:
-    WSGIPath: project/project/wsgi.py
+    WSGIPath: project/wsgi.py
 ```
 
 **Note**
