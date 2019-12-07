@@ -14,19 +14,34 @@
 
 
 ## Deploying Django App to Amazon AWS, Elastic Beanstalk
-**Note:** The following is based instructions provided in this [video](https://www.youtube.com/watch?v=ypnEf7W8db0)
+**NOTE:**
+- [IMPORTANT] The best practice to deploying is to first practice using an **empty project**
+- [IMPORTANT] Make sure to use **Django version 2.1.1** (As of 12/07/2019).
+  - Installing higher versions will result in the following error
 
+  ```
+    current sqlite version is 3.7.* but Django is asking for sqlite version 3.8.2
+  ```
 
 ### PART 1: Configure Your Django Application for Elastic Beanstalk
 
-1. In project root folder, Create a new directory, called `.ebextensions`:
+1. In project root folder, create a new directory, called `.ebextensions`:
 
+`personal-website/project/`
 ```
 mkdir .ebextensions
 ```
 
+**Note**
+- Make sure to put inside the root project folder, or the following error will be raised
+
+  ```
+  Target WSGI script not found or unable to stat: /opt/python/current/app/project
+  ```
+
 2. In `.ebextensions` directory, create file named `django.config` with the following texts
 
+`personal-website/project/.ebextensions`
 ```
 option_settings:
   aws:elasticbeanstalk:container:python:
@@ -138,3 +153,9 @@ eb deploy
 ```
 eb open
 ```
+
+
+## References
+1. Deploy Django App Using Elastic Beanstalk, Youtube, [link](https://www.youtube.com/watch?v=ypnEf7W8db0)
+2. Deploying a Django Application to Elastic Beanstalk, Amazon, [link](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-django.html)
+
