@@ -30,12 +30,17 @@ mkdir .ebextensions
 ```
 option_settings:
   aws:elasticbeanstalk:container:python:
-    WSGIPath: project/wsgi.py
+    WSGIPath: project/project/wsgi.py
 ```
 
 **Note**
 - WSGIPath, specifies the location of the WSGI script that Elastic Beanstalk uses to start your application.
 
+- If WSGIPath not found, then it can be changed by clicking `modify` in `software` under `modification` under PROJECT ENV NAME (i.e. django-env)
+
+<div style="text-align: center;">
+    <img src="https://user-images.githubusercontent.com/6856382/70368110-ddc53180-185b-11ea-885f-04ff41f23529.png">
+</div>
 
 ### PART 2: Installing AWS EB CLI
 
