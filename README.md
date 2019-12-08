@@ -93,6 +93,9 @@ eb --version
     <img src="https://user-images.githubusercontent.com/6856382/70324622-d7e03980-17e4-11ea-889e-4ca0e5cb6b07.png">
 </div>
 
+**Note**
+- Access key and secret key can be changed in `~/.aws/config` file
+
 ### PART 2: Deploy Your Site With the EB CLI
 
 1. Initialize your EB CLI repository with the eb init command:
