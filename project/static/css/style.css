@@ -7,3 +7,8 @@ body {
     height: 200px;
     object-fit: cover;
 }
+
+.img-portfolio-detail {
+    height: 200px;
+    object-fit: contain;
+}
