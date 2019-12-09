@@ -10,6 +10,9 @@
                         <p>
                             {{ project.summary }}
                         </p>
+                        <p>
+                            <strong>Created:</strong> {{ project.date_created|date:'d-m-Y'}}
+                        </p>
                         <div>
                             {% if project.url_demo %}
                                 <a href="{{ project.url_demo }}" class="btn btn-primary">See Demo</a>
