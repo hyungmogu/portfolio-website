@@ -2,25 +2,27 @@
 
 {% block body_content %}
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light" style="min-height: 300px;">
-        <div class="row">
-            <div class="col-md-8 d-flex justify-content-center justify-content-md-left align-items-center text-center text-md-left">
-                <div>
-                    <h2>{{ project.title }}</h2>
-                    <p>
-                        {{ project.summary }}
-                    </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 d-flex justify-content-center justify-content-md-start align-items-center text-center text-md-left">
                     <div>
-                        {% if project.url_demo %}
-                            <a href="{{ project.url_demo }}" class="btn btn-primary">See Demo</a>
-                        {% endif %}
-                        {% if project.url_source_code %}
-                            <a href="{{ project.url_source_code }}" class="btn btn-outline-secondary">Source Code</a>
-                        {% endif %}
+                        <h2>{{ project.title }}</h2>
+                        <p>
+                            {{ project.summary }}
+                        </p>
+                        <div>
+                            {% if project.url_demo %}
+                                <a href="{{ project.url_demo }}" class="btn btn-primary">See Demo</a>
+                            {% endif %}
+                            {% if project.url_source_code %}
+                                <a href="{{ project.url_source_code }}" class="btn btn-outline-secondary">Source Code</a>
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <img class="img-portfolio-detail card-img-top m-3" src="{{ project.image_main|default_if_none:'http://via.placeholder.com/350x200' }}" alt="{{ project.title }}">
+                <div class="col-md-4">
+                    <img class="img-portfolio-detail card-img-top m-3" src="{{ project.image_main|default_if_none:'http://via.placeholder.com/350x200' }}" alt="{{ project.title }}">
+                </div>
             </div>
         </div>
     </div>
