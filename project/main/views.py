@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404
 from django.views.generic import TemplateView, DetailView
 
+from django.core.mail import send_mail #this is temporary
+
 from . import models
 
 class HomeView(TemplateView):

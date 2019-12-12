@@ -10,4 +10,5 @@ body {
 
 .img-portfolio-detail {
     height: 200px;
+    object-fit: contain;
 }
