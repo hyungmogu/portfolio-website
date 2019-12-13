@@ -10,4 +10,5 @@ class ForwardEmail(APIView):
         # Validate email
         # Use Django mailer function to send email to ‘hyungmogu@gmail.com’
         # if email submission successful, send result back to client
-        pass
+        print(request.data)
+        return Response(request.data, status=status.HTTP_200_OK)
