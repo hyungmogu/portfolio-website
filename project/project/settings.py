@@ -132,3 +132,8 @@ FIXTURE_DIRS = (
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
+
+# Amazon SES (for sending emails)
+EMAIL_BACKEND = 'django_ses.SESBackend'
+AWS_ACCESS_KEY_ID = 'AKIAV3PX45WR3ISQ2P6O'
+AWS_SECRET_ACCESS_KEY = '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'

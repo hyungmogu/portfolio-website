@@ -32,10 +32,10 @@
                                 <form method="POST" action="{% url 'api:email' %}">
                                     {% csrf_token %}
                                     <div class="form-group">
-                                        <input type="email" class="form-control" id="email-address" placeholder="Email Address">
+                                        <input type="email" name="email" class="form-control" id="email-address" placeholder="Email Address">
                                     </div>
                                     <div class="form-group">
-                                        <textarea type="password" class="form-control" rows="5" id="email-content" placeholder="Message"></textarea>
+                                        <textarea name="message" class="form-control" rows="5" id="email-content" placeholder="Message"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-block btn-success">Submit</button>
                                 </form>
