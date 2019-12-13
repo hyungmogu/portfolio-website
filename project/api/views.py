@@ -7,16 +7,14 @@ from rest_framework import status
 class ForwardEmail(APIView):
     def post(self, request, format=None):
         # Use Django mailer function to send email to website.guhyungm7gmail.com’
-
         # if email submission successful, send result back to client
-        print(request.data)
         from_email = request.data.get('email', '')
         message = request.data.get('message', '')
 
         send_mail(
-            subject = 'Email from hyungmogu.com',
+            subject = 'Message from <{}>'.format(from_email),
             message = message,
-            from_email = 'hyungmog7@gmail.com',
+            from_email = 'website.guhyungm7@gmail.com',
             recipient_list = ['website.guhyungm7@gmail.com',],
             fail_silently = False
         )
