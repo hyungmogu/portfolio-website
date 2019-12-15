@@ -1,3 +1,7 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -30,13 +34,11 @@ header {
     }
     a {
         text-decoration: none;
+        color: black;
     }
 
     &.nav--type-main {
         text-align: center;
-        h3 {
-
-        }
     }
 
     &.nav--type-social {
