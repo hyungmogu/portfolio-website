@@ -14,7 +14,7 @@ main {
   display: flex; }
   main article {
     width: 100%; }
-  main .header--main-desktop {
+  main .header--primary-desktop {
     display: none;
     align-items: center;
     flex-direction: column; }
@@ -22,44 +22,35 @@ main {
 @media screen and (min-width: 930px) {
   main article {
     width: calc(100% - 14rem); }
-  main .header--main-desktop {
+  main .header--primary-desktop {
     width: 14rem;
     display: flex; } }
 
-.logo {
-  margin-top: 3rem;
-  width: 9rem;
-  height: 9rem;
-  border-radius: 50%; }
+.background-img {
+  width: inherit;
+  padding-top: 3rem;
+  height: calc(100vh - 3rem);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background-image: url("img/cover-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
-.nav ul {
-  padding: 0;
-  margin: 0; }
+@media screen and (min-width: 930px) {
+  .background-img {
+    height: 100vh; } }
 
-.nav li {
-  list-style-type: none; }
-
-.nav a {
-  text-decoration: none;
-  color: black; }
-
-.nav.nav--header-mobile {
+.header--mobile nav {
   height: 3rem;
   display: flex;
   background-color: white;
   justify-content: space-between;
   align-items: center; }
 
-.nav.nav--menu {
-  text-align: center; }
-
-.nav.nav--social {
-  text-align: center;
-  margin-top: auto; }
-  .nav.nav--social ul {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 0.5rem; }
+@media screen and (min-width: 930px) {
+  .header--mobile {
+    display: none; } }
 
 .icon {
   width: 25px;
@@ -81,19 +72,33 @@ main {
   .icon:last-child {
     margin-right: 0; }
 
-.background-img {
-  width: inherit;
-  height: calc(100vh - 3rem);
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  background-image: url("img/cover-page.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+.logo {
+  margin-top: 3rem;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%; }
 
-@media screen and (min-width: 930px) {
-  .background-img {
-    height: 100vh; } }
+.menu ul {
+  padding: 0;
+  margin: 0; }
+
+.menu li {
+  list-style-type: none; }
+
+.menu a {
+  text-decoration: none;
+  color: black; }
+
+.menu.menu--primary {
+  text-align: center; }
+
+.menu.menu--social {
+  text-align: center;
+  margin-top: auto; }
+  .menu.menu--social ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem; }
 
 .mb-1 {
   margin-bottom: 0.25rem; }
