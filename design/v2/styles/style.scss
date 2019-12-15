@@ -17,12 +17,11 @@ main {
         width: 85%;
     }
 
-    header {
+    .header--main-desktop {
         width: 15%;
-
         padding: 1.5rem;
         align-items: center;
-        display:flex;
+        display:none;
         flex-direction: column;
     }
 }
@@ -54,7 +53,7 @@ main {
         align-items:center
     }
 
-    &.nav--primary-desktop {
+    &.nav--menu {
         text-align: center;
     }
 
@@ -112,6 +111,12 @@ main {
     body {
         height: 100vh;
     }
+
+    main {
+        .header--main-desktop {
+            display:flex;
+        }
+    }
 }
 
 // ----------
@@ -151,17 +156,16 @@ $total-padding-steps: 10;
     display: initial;
 }
 
-.print-only {
+.desktop-only {
     display: none;
 }
-
 
 @media screen and (min-width: 930px) {
     .mobile-only {
         display: none;
     }
 
-    .print-only {
+    .desktop-only {
         display: initial;
     }
 }

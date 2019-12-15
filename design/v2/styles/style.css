@@ -10,11 +10,11 @@ main {
   display: flex; }
   main article {
     width: 85%; }
-  main header {
+  main .header--main-desktop {
     width: 15%;
     padding: 1.5rem;
     align-items: center;
-    display: flex;
+    display: none;
     flex-direction: column; }
 
 .logo {
@@ -40,7 +40,7 @@ main {
   justify-content: space-between;
   align-items: center; }
 
-.nav.nav--primary-desktop {
+.nav.nav--menu {
   text-align: center; }
 
 .nav.nav--social {
@@ -83,7 +83,9 @@ main {
 
 @media screen and (min-width: 930px) {
   body {
-    height: 100vh; } }
+    height: 100vh; }
+  main .header--main-desktop {
+    display: flex; } }
 
 .mb-1 {
   margin-bottom: 0.25rem; }
@@ -185,11 +187,11 @@ main {
 .mobile-only {
   display: initial; }
 
-.print-only {
+.desktop-only {
   display: none; }
 
 @media screen and (min-width: 930px) {
   .mobile-only {
     display: none; }
-  .print-only {
+  .desktop-only {
     display: initial; } }
