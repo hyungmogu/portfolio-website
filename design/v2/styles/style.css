@@ -2,7 +2,7 @@
   font-family: 'Lato', sans-serif; }
 
 body {
-  height: 100vh;
+  height: calc(100vh - $height-nav--header-mobile);
   margin: 0; }
 
 main {
@@ -34,9 +34,11 @@ main {
   color: black; }
 
 .nav.nav--header-mobile {
+  height: 3rem;
   display: flex;
   background-color: white;
-  justify-content: space-between; }
+  justify-content: space-between;
+  align-items: center; }
 
 .nav.nav--primary-desktop {
   text-align: center; }
@@ -79,6 +81,10 @@ main {
   background-repeat: no-repeat;
   background-size: cover; }
 
+@media screen and (min-width: 930px) {
+  body {
+    height: 100vh; } }
+
 .mb-1 {
   margin-bottom: 0.25rem; }
 
@@ -112,32 +118,62 @@ main {
 .p-1 {
   padding: 0.25rem; }
 
+.pl-1 {
+  padding-left: 0.25rem; }
+
 .p-2 {
   padding: 0.5rem; }
+
+.pl-2 {
+  padding-left: 0.5rem; }
 
 .p-3 {
   padding: 0.75rem; }
 
+.pl-3 {
+  padding-left: 0.75rem; }
+
 .p-4 {
   padding: 1rem; }
+
+.pl-4 {
+  padding-left: 1rem; }
 
 .p-5 {
   padding: 1.25rem; }
 
+.pl-5 {
+  padding-left: 1.25rem; }
+
 .p-6 {
   padding: 1.5rem; }
+
+.pl-6 {
+  padding-left: 1.5rem; }
 
 .p-7 {
   padding: 1.75rem; }
 
+.pl-7 {
+  padding-left: 1.75rem; }
+
 .p-8 {
   padding: 2rem; }
+
+.pl-8 {
+  padding-left: 2rem; }
 
 .p-9 {
   padding: 2.25rem; }
 
+.pl-9 {
+  padding-left: 2.25rem; }
+
 .p-10 {
   padding: 2.5rem; }
+
+.pl-10 {
+  padding-left: 2.5rem; }
 
 .small {
   font-size: 80%;
@@ -145,3 +181,15 @@ main {
 
 .color-white {
   color: white; }
+
+.mobile-only {
+  display: initial; }
+
+.print-only {
+  display: none; }
+
+@media screen and (min-width: 930px) {
+  .mobile-only {
+    display: none; }
+  .print-only {
+    display: initial; } }

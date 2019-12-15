@@ -1,9 +1,11 @@
+$height-nav--header-mobile: 3rem;
+
 * {
     font-family: 'Lato', sans-serif;
 }
 
 body {
-    height: 100vh;
+    height: calc(100vh - $height-nav--header-mobile);
     margin: 0;
 }
 
@@ -45,9 +47,11 @@ main {
     }
 
     &.nav--header-mobile {
+        height: 3rem;
         display: flex;
         background-color: white;
         justify-content: space-between;
+        align-items:center
     }
 
     &.nav--primary-desktop {
@@ -104,6 +108,12 @@ main {
     background-size: cover;
 }
 
+@media screen and (min-width: 930px) {
+    body {
+        height: 100vh;
+    }
+}
+
 // ----------
 // Modifiers
 // ----------
@@ -121,6 +131,10 @@ $total-padding-steps: 10;
     .p-#{$i} {
         padding: $i * 0.25rem;
     }
+
+    .pl-#{$i} {
+        padding-left: $i * 0.25rem;
+    }
 }
 
 // Fonts
@@ -131,4 +145,23 @@ $total-padding-steps: 10;
 
 .color-white {
     color: white;
+}
+
+.mobile-only {
+    display: initial;
+}
+
+.print-only {
+    display: none;
+}
+
+
+@media screen and (min-width: 930px) {
+    .mobile-only {
+        display: none;
+    }
+
+    .print-only {
+        display: initial;
+    }
 }
