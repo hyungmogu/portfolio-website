@@ -7,10 +7,6 @@ body {
     display: flex;
     margin: 0;
 
-    & > * {
-        padding: 2em;
-    }
-
     main {
         width: 85%;
     }
@@ -20,7 +16,7 @@ body {
 }
 
 header {
-    width: 15%;
+    padding: 1.5rem;
     align-items: center;
     display:flex;
     flex-direction: column;

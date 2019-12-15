@@ -5,15 +5,13 @@ body {
   height: 100vh;
   display: flex;
   margin: 0; }
-  body > * {
-    padding: 2em; }
   body main {
     width: 85%; }
   body header {
     width: 15%; }
 
 header {
-  width: 15%;
+  padding: 1.5rem;
   align-items: center;
   display: flex;
   flex-direction: column; }
