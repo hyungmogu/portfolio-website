@@ -42,6 +42,11 @@ main {
     padding-top: 0;
     height: 100vh; } }
 
+.content.home {
+  margin-top: 20%;
+  color: white;
+  max-width: 430px; }
+
 .header--mobile nav {
   height: 3rem;
   display: flex;
@@ -194,6 +199,9 @@ main {
 .small {
   font-size: 80%;
   font-weight: 400; }
+
+.title {
+  font-size: 2.9rem; }
 
 .color-white {
   color: white; }

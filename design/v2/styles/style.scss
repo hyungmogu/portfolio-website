@@ -63,6 +63,14 @@ main {
     }
 }
 
+.content {
+    &.home {
+        margin-top: 20%;
+        color: white;
+        max-width: 430px;
+    }
+}
+
 .header--mobile {
     nav {
         height: #{$height-header--mobile};
@@ -169,6 +177,10 @@ $total-padding-steps: 10;
 .small {
     font-size: 80%;
     font-weight: 400;
+}
+
+.title {
+    font-size: 2.9rem;
 }
 
 .color-white {
