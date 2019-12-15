@@ -1,0 +1,19 @@
+body {
+  height: 100vh;
+  display: flex; }
+  body > * {
+    padding: 2em; }
+
+header {
+  width: 15%;
+  text-align: center; }
+  header .logo {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%; }
+
+nav ul {
+  padding: 0;
+  margin: 0; }
+  nav ul li {
+    list-style-type: none; }
