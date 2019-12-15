@@ -18,11 +18,55 @@ header {
     }
 }
 
-nav ul {
-    padding: 0;
-    margin: 0;
-
+.nav {
+    ul {
+        padding: 0;
+        margin: 0;
+    }
     li {
         list-style-type: none;
     }
+
+    &.nav--type-social {
+        ul {
+            display: flex;
+            justify-content: center;
+
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin: 0 0.25em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none !important;
+    color: inherit;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+
+    &:first {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+// Modifiers
+
+.small {
+    font-size: 80%;
+    font-weight: 400;
 }
