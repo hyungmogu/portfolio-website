@@ -43,8 +43,8 @@ main {
     height: 100vh; } }
 
 .content.home {
-  margin-top: 10rem;
-  margin-left: 5rem;
+  margin-top: 8rem;
+  margin-left: 3rem;
   color: white;
   max-width: 430px; }
 
@@ -208,7 +208,7 @@ main {
   font-weight: 400; }
 
 .title {
-  font-size: 2.9rem; }
+  font-size: 2.5rem; }
 
 .color-white {
   color: white; }
@@ -223,4 +223,6 @@ main {
   .mobile-only {
     display: none; }
   .desktop-only {
-    display: initial; } }
+    display: initial; }
+  .title {
+    font-size: 2.9rem; } }

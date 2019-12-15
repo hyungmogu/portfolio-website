@@ -65,8 +65,8 @@ main {
 
 .content {
     &.home {
-        margin-top: 10rem;
-        margin-left: 5rem;
+        margin-top: 8rem;
+        margin-left: 3rem;
         color: white;
         max-width: 430px;
     }
@@ -192,7 +192,7 @@ $total-padding-steps: 10;
 }
 
 .title {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
 }
 
 .color-white {
@@ -214,5 +214,9 @@ $total-padding-steps: 10;
 
     .desktop-only {
         display: initial;
+    }
+
+    .title {
+        font-size: 2.9rem;
     }
 }
