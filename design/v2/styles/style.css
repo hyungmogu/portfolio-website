@@ -11,17 +11,16 @@ main {
   main article {
     width: 85%; }
   main header {
-    width: 15%; }
+    width: 15%;
+    padding: 1.5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column; }
 
-header {
-  padding: 1.5rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column; }
-  header .logo {
-    width: 9rem;
-    height: 9rem;
-    border-radius: 50%; }
+.logo {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%; }
 
 .nav ul {
   padding: 0;
@@ -34,13 +33,18 @@ header {
   text-decoration: none;
   color: black; }
 
-.nav.nav--type-main {
+.nav.nav--header-mobile {
+  display: flex;
+  background-color: white;
+  justify-content: space-between; }
+
+.nav.nav--primary-desktop {
   text-align: center; }
 
-.nav.nav--type-social {
+.nav.nav--social {
   text-align: center;
   margin-top: auto; }
-  .nav.nav--type-social ul {
+  .nav.nav--social ul {
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem; }

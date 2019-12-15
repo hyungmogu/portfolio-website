@@ -14,22 +14,21 @@ main {
     article {
         width: 85%;
     }
+
     header {
         width: 15%;
+
+        padding: 1.5rem;
+        align-items: center;
+        display:flex;
+        flex-direction: column;
     }
 }
 
-header {
-    padding: 1.5rem;
-    align-items: center;
-    display:flex;
-    flex-direction: column;
-
-    .logo {
-        width: 9rem;
-        height: 9rem;
-        border-radius: 50%;
-    }
+.logo {
+    width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
 }
 
 .nav {
@@ -45,11 +44,17 @@ header {
         color: black;
     }
 
-    &.nav--type-main {
+    &.nav--header-mobile {
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+    }
+
+    &.nav--primary-desktop {
         text-align: center;
     }
 
-    &.nav--type-social {
+    &.nav--social {
         text-align: center;
         margin-top: auto;
         ul {
