@@ -4,10 +4,14 @@
 
 body {
     height: 100vh;
-    display: flex;
     margin: 0;
+}
 
-    main {
+main {
+    height: inherit;
+    display: flex;
+
+    article {
         width: 85%;
     }
     header {
@@ -87,6 +91,9 @@ header {
 .background-img {
     width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 0;
     background-image: url('img/cover-page.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -104,8 +111,19 @@ $total-margin-steps: 10;
     }
 }
 
+$total-padding-steps: 10;
+@for $i from 1 through $total-padding-steps {
+    .p-#{$i} {
+        padding: $i * 0.25rem;
+    }
+}
+
 // Fonts
 .small {
     font-size: 80%;
     font-weight: 400;
+}
+
+.color-white {
+    color: white;
 }
