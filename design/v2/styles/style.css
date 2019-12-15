@@ -43,9 +43,16 @@ main {
     height: 100vh; } }
 
 .content.home {
-  margin-top: 20%;
+  margin-top: 10rem;
+  margin-left: 5rem;
   color: white;
   max-width: 430px; }
+
+@media screen and (min-width: 930px) {
+  .content.home {
+    margin-top: 10rem;
+    margin-left: 5rem;
+    max-width: 430px; } }
 
 .header--mobile nav {
   height: 3rem;
