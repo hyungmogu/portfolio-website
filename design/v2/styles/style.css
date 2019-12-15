@@ -6,7 +6,9 @@ body {
 
 header {
   width: 15%;
-  text-align: center; }
+  align-items: center;
+  display: flex;
+  flex-direction: column; }
   header .logo {
     width: 175px;
     height: 175px;
@@ -19,10 +21,16 @@ header {
 .nav li {
   list-style-type: none; }
 
-.nav.nav--type-social ul {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0.5rem; }
+.nav.nav--type-main {
+  text-align: center; }
+
+.nav.nav--type-social {
+  text-align: center;
+  margin-top: auto; }
+  .nav.nav--type-social ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5rem; }
 
 .icon {
   width: 25px;
@@ -43,6 +51,9 @@ header {
     margin-left: 0; }
   .icon:last-child {
     margin-right: 0; }
+
+.mb-3 {
+  margin-bottom: 1rem; }
 
 .small {
   font-size: 80%;
