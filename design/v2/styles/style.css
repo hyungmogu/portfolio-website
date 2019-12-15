@@ -16,8 +16,8 @@ header {
   display: flex;
   flex-direction: column; }
   header .logo {
-    width: 175px;
-    height: 175px;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%; }
 
 .nav ul {
