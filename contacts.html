@@ -68,9 +68,28 @@
                 <header class="header--secondary">
                     <h2>Contacts</h2>
                 </header>
-                <article>
-
-                </article>
+                <div>
+                    <article>
+                        <form method="POST" action="#">
+                            <div class="form-group">
+                                <label for="form--contact-name">Name</label>
+                                <input id="form--contact-name" name="name" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="form--contact-email">Email</label>
+                                <input id="form--contact-email" name="email" type="email" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="form--contact-message">Message</label>
+                                <textarea id="form--contact-message" name="message" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </article>
+                    <aside>
+                        aside here
+                    </aside>
+                </div>
             </section>
         </main>
         <div class="screen-overlay"></div>
