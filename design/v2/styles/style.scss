@@ -27,6 +27,7 @@ main {
 }
 @media screen and (min-width: 930px) {
     main {
+        height: 100vh;
         article {
             width: calc(100vw - #{$width-header--primary-desktop});
         }
@@ -94,6 +95,13 @@ main {
     }
 }
 
+.header--primary-desktop {
+    padding-top: calc(#{$height-header--mobile} + #{$padding-header--mobile}*2);
+    .logo {
+        margin-top: 3rem;
+    }
+}
+
 .header--primary-mobile {
     display: none;
     position:fixed;
@@ -104,12 +112,16 @@ main {
 
     & > nav {
         display: flex;
-        padding: 1.45rem 1.5rem;
+        height: #{$height-header--mobile};
+        padding: #{$padding-header--mobile} 1.5rem;
         align-items: center;
     }
 
     & > section {
         padding: 0 1.5rem 1.5rem 1.5rem;
+        display: flex;
+        flex-direction: column;
+        height: calc(100vh - (#{$height-header--mobile} + #{$padding-header--mobile}*2));
     }
 }
 
@@ -147,7 +159,6 @@ main {
 }
 
 .logo {
-    margin-top: 3rem;
     width: 9rem;
     height: 9rem;
     border-radius: 50%;
