@@ -65,6 +65,19 @@ main {
   .header--mobile {
     display: none; } }
 
+.header--primary-mobile {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  bottom: 0; }
+  .header--primary-mobile > nav {
+    display: flex;
+    padding: 1.5rem;
+    height: 3rem;
+    align-items: center; }
+  .header--primary-mobile > section {
+    padding: 0 1.5rem 1.5rem 1.5rem; }
+
 .icon {
   width: 25px;
   height: 25px;
