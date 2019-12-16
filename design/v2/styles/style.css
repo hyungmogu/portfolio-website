@@ -24,6 +24,21 @@ main {
       width: 14rem;
       display: flex; } }
 
+.article--home {
+  margin: 5rem 2rem 0 2rem;
+  color: white;
+  max-width: 430px; }
+  .article--home h2 {
+    font-size: 2.5rem; }
+
+@media screen and (min-width: 930px) {
+  .article--home {
+    margin-top: 10rem;
+    margin-left: 5rem;
+    max-width: 430px; }
+    .article--home h2 {
+      font-size: 2.9rem; } }
+
 .background-img {
   width: inherit;
   padding-top: 1.4rem;
@@ -84,6 +99,11 @@ main {
   .header--primary-mobile {
     display: none; } }
 
+.header--secondary {
+  padding: 1.5rem; }
+  .header--secondary h2 {
+    margin: 0; }
+
 .icon {
   width: 25px;
   height: 25px;
@@ -141,21 +161,6 @@ main {
   bottom: 0;
   right: 0;
   z-index: 1; }
-
-.title--home {
-  margin: 5rem 2rem 0 2rem;
-  color: white;
-  max-width: 430px; }
-  .title--home h1 {
-    font-size: 2.5rem; }
-
-@media screen and (min-width: 930px) {
-  .title--home {
-    margin-top: 10rem;
-    margin-left: 5rem;
-    max-width: 430px; }
-    .title--home h1 {
-      font-size: 2.9rem; } }
 
 .mb-1 {
   margin-bottom: 0.25rem; }
