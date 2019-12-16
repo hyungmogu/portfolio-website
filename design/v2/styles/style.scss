@@ -1,5 +1,4 @@
 $height-header--mobile: 3rem;
-
 $width-header--primary-desktop: 14rem;
 
 * {
@@ -22,7 +21,7 @@ main {
     display: flex;
 
     article {
-        width: 100%;
+        width: 100vw;
     }
 
     .header--primary-desktop {
@@ -34,7 +33,7 @@ main {
 @media screen and (min-width: 930px) {
     main {
         article {
-            width: calc(100% - #{$width-header--primary-desktop});
+            width: calc(100vw - #{$width-header--primary-desktop});
         }
 
         .header--primary-desktop {

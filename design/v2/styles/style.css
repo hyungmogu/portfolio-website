@@ -13,7 +13,7 @@ main {
   height: inherit;
   display: flex; }
   main article {
-    width: 100%; }
+    width: 100vw; }
   main .header--primary-desktop {
     display: none;
     align-items: center;
@@ -21,7 +21,7 @@ main {
 
 @media screen and (min-width: 930px) {
   main article {
-    width: calc(100% - 14rem); }
+    width: calc(100vw - 14rem); }
   main .header--primary-desktop {
     width: 14rem;
     display: flex; } }
