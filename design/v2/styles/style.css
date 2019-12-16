@@ -66,6 +66,7 @@ main {
 .header--primary-mobile {
   display: none;
   position: fixed;
+  z-index: 2;
   background-color: white;
   top: 0;
   bottom: 0; }
@@ -127,6 +128,17 @@ main {
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem; }
+
+.screen-overlay {
+  display: none;
+  background-color: black;
+  opacity: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1; }
 
 .mb-1 {
   margin-bottom: 0.25rem; }

@@ -73,19 +73,24 @@
                 </div>
             </article>
         </main>
+        <div class="screen-overlay"></div>
     </body>
     <script>
         let toggleMenu = function() {
             let mobileMenu = (document.getElementsByClassName('header--primary-mobile'))[0];
+            let screenOverlay = (document.getElementsByClassName('screen-overlay'))[0];
 
-            // if clicked, then check for class 'open'
+            // if clicked, then check for class 'opened'
             if (mobileMenu && mobileMenu.classList.contains('opened')) {
                 mobileMenu.classList.remove('opened');
+                screenOverlay.classList.remove('opened');
+
                 return;
             }
-            // if open, then remove 'open'
-            // if not open, add 'open'
+            // if open, then remove 'opened'
+            // if not open, add 'opened'
             mobileMenu.classList.add('opened');
+            screenOverlay.classList.add('opened');
         }
 
     </script>
