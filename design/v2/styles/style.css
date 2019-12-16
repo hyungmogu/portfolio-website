@@ -1,9 +1,6 @@
 * {
   font-family: 'Lato', sans-serif; }
 
-article {
-  background-color: #F2F2F2; }
-
 body {
   height: 100vh;
   margin: 0; }
@@ -11,7 +8,7 @@ body {
 main {
   height: calc(100vh - (1.4rem + 1.3rem*2));
   display: flex; }
-  main article {
+  main .content {
     width: 100vw; }
   main .header--primary-desktop {
     display: none;
@@ -21,7 +18,7 @@ main {
 @media screen and (min-width: 930px) {
   main {
     height: 100vh; }
-    main article {
+    main .content {
       width: calc(100vw - 14rem); }
     main .header--primary-desktop {
       width: 14rem;
@@ -43,16 +40,9 @@ main {
     padding-top: 0;
     height: 100vh; } }
 
-.content.home {
-  margin: 5rem 2rem 0 2rem;
-  color: white;
-  max-width: 430px; }
-
-@media screen and (min-width: 930px) {
-  .content.home {
-    margin-top: 10rem;
-    margin-left: 5rem;
-    max-width: 430px; } }
+.content {
+  z-index: -2;
+  background-color: #F2F2F2; }
 
 .header--mobile {
   background-color: white;
@@ -152,6 +142,21 @@ main {
   right: 0;
   z-index: 1; }
 
+.title--home {
+  margin: 5rem 2rem 0 2rem;
+  color: white;
+  max-width: 430px; }
+  .title--home h1 {
+    font-size: 2.5rem; }
+
+@media screen and (min-width: 930px) {
+  .title--home {
+    margin-top: 10rem;
+    margin-left: 5rem;
+    max-width: 430px; }
+    .title--home h1 {
+      font-size: 2.9rem; } }
+
 .mb-1 {
   margin-bottom: 0.25rem; }
 
@@ -246,15 +251,8 @@ main {
   font-size: 80%;
   font-weight: 400; }
 
-.title {
-  font-size: 2.5rem; }
-
 .color-white {
   color: white; }
 
 .opened {
   display: initial; }
-
-@media screen and (min-width: 930px) {
-  .title {
-    font-size: 2.9rem; } }

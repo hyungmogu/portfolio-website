@@ -6,10 +6,6 @@ $width-header--primary-desktop: 14rem;
     font-family: 'Lato', sans-serif;
 }
 
-article {
-    background-color: #F2F2F2;
-}
-
 body {
     height: 100vh;
     margin: 0;
@@ -19,7 +15,7 @@ main {
     height: calc(100vh - (#{$height-header--mobile} + #{$padding-header--mobile}*2));
     display: flex;
 
-    article {
+    .content {
         width: 100vw;
     }
 
@@ -32,7 +28,7 @@ main {
 @media screen and (min-width: 930px) {
     main {
         height: 100vh;
-        article {
+        .content {
             width: calc(100vw - #{$width-header--primary-desktop});
         }
 
@@ -63,23 +59,9 @@ main {
 }
 
 .content {
-    &.home {
-        margin: 5rem 2rem 0 2rem;
-        color: white;
-        max-width: 430px;
-    }
+    z-index: -2;
+    background-color: #F2F2F2;
 }
-
-@media screen and (min-width: 930px) {
-    .content {
-        &.home {
-            margin-top: 10rem;
-            margin-left: 5rem;
-            max-width: 430px;
-        }
-    }
-}
-
 
 .header--mobile {
     background-color: white;
@@ -208,6 +190,30 @@ main {
     z-index: 1;
 }
 
+.title--home {
+    margin: 5rem 2rem 0 2rem;
+    color: white;
+    max-width: 430px;
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+@media screen and (min-width: 930px) {
+    .title--home {
+        margin-top: 10rem;
+        margin-left: 5rem;
+        max-width: 430px;
+
+        h1 {
+            font-size: 2.9rem;
+        }
+    }
+}
+
 // ----------
 // Modifiers
 // ----------
@@ -237,20 +243,10 @@ $total-padding-steps: 10;
     font-weight: 400;
 }
 
-.title {
-    font-size: 2.5rem;
-}
-
 .color-white {
     color: white;
 }
 
 .opened {
     display: initial;
-}
-
-@media screen and (min-width: 930px) {
-    .title {
-        font-size: 2.9rem;
-    }
 }
