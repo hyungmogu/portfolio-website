@@ -87,7 +87,6 @@ main {
     text-align: center;
     padding: .375rem .75rem;
     border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .btn--primary {
@@ -97,7 +96,6 @@ main {
 }
 
 .content {
-    z-index: -2;
     background-color: #F2F2F2;
 }
 
