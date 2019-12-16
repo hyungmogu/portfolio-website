@@ -54,12 +54,13 @@ main {
     margin-left: 5rem;
     max-width: 430px; } }
 
-.header--mobile nav {
-  height: 3rem;
-  display: flex;
+.header--mobile {
   background-color: white;
-  justify-content: space-between;
-  align-items: center; }
+  padding: 1.3rem; }
+  .header--mobile nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
 
 @media screen and (min-width: 930px) {
   .header--mobile {
@@ -72,11 +73,14 @@ main {
   bottom: 0; }
   .header--primary-mobile > nav {
     display: flex;
-    padding: 1.5rem;
-    height: 3rem;
+    padding: 1.45rem 1.5rem;
     align-items: center; }
   .header--primary-mobile > section {
     padding: 0 1.5rem 1.5rem 1.5rem; }
+
+@media screen and (min-width: 930px) {
+  .header--primary-mobile {
+    display: none; } }
 
 .icon {
   width: 25px;

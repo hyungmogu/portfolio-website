@@ -83,10 +83,10 @@ main {
 
 
 .header--mobile {
+    background-color: white;
+    padding: 1.3rem;
     nav {
-        height: #{$height-header--mobile};
         display: flex;
-        background-color: white;
         justify-content: space-between;
         align-items:center
     }
@@ -106,13 +106,18 @@ main {
 
     & > nav {
         display: flex;
-        padding: 1.5rem;
-        height: #{$height-header--mobile};
+        padding: 1.45rem 1.5rem;
         align-items: center;
     }
 
     & > section {
         padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .header--primary-mobile {
+        display: none;
     }
 }
 
