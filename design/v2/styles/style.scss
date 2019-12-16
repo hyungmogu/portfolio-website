@@ -95,6 +95,7 @@ main {
 }
 
 .header--primary-mobile {
+    display: none;
     position:fixed;
     background-color: white;
     top: 0;
@@ -217,23 +218,11 @@ $total-padding-steps: 10;
     color: white;
 }
 
-.mobile-only {
+.opened {
     display: initial;
 }
 
-.desktop-only {
-    display: none;
-}
-
 @media screen and (min-width: 930px) {
-    .mobile-only {
-        display: none;
-    }
-
-    .desktop-only {
-        display: initial;
-    }
-
     .title {
         font-size: 2.9rem;
     }

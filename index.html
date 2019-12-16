@@ -13,7 +13,7 @@
     <body>
         <header class="header--mobile">
             <nav>
-                <div><i class="fas fa-bars"></i></div>
+                <div onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
                 <div><strong>Hyungmo Gu</strong></div>
                 <div></div>
             </nav>
@@ -41,7 +41,7 @@
             </header>
             <header class="header--primary-mobile">
                 <nav>
-                    <div><i class="fas fa-times"></i></div>
+                    <div onclick="toggleMenu()"><i class="fas fa-times"></i></div>
                 </nav>
                 <section>
                     <img class="logo" src="https://placehold.it/200x200">
@@ -74,4 +74,19 @@
             </article>
         </main>
     </body>
+    <script>
+        let toggleMenu = function() {
+            let mobileMenu = (document.getElementsByClassName('header--primary-mobile'))[0];
+
+            // if clicked, then check for class 'open'
+            if (mobileMenu && mobileMenu.classList.contains('opened')) {
+                mobileMenu.classList.remove('opened');
+                return;
+            }
+            // if open, then remove 'open'
+            // if not open, add 'open'
+            mobileMenu.classList.add('opened');
+        }
+
+    </script>
 </html>

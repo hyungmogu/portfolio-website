@@ -64,6 +64,7 @@ main {
     display: none; } }
 
 .header--primary-mobile {
+  display: none;
   position: fixed;
   background-color: white;
   top: 0;
@@ -227,16 +228,9 @@ main {
 .color-white {
   color: white; }
 
-.mobile-only {
+.opened {
   display: initial; }
 
-.desktop-only {
-  display: none; }
-
 @media screen and (min-width: 930px) {
-  .mobile-only {
-    display: none; }
-  .desktop-only {
-    display: initial; }
   .title {
     font-size: 2.9rem; } }
