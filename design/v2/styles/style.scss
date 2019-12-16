@@ -1,4 +1,5 @@
-$height-header--mobile: 3rem;
+$height-header--mobile: 1.4rem;
+$padding-header--mobile: 1.3rem;
 $width-header--primary-desktop: 14rem;
 
 * {
@@ -6,18 +7,12 @@ $width-header--primary-desktop: 14rem;
 }
 
 body {
-    height: calc(100vh - #{$height-header--mobile});
+    height: 100vh;
     margin: 0;
 }
 
-@media screen and (min-width: 930px) {
-    body {
-        height: 100vh;
-    }
-}
-
 main {
-    height: inherit;
+    height: calc(100vh - (#{$height-header--mobile} + #{$padding-header--mobile}*2));
     display: flex;
 
     article {
@@ -84,7 +79,8 @@ main {
 
 .header--mobile {
     background-color: white;
-    padding: 1.3rem;
+    height: #{$height-header--mobile};
+    padding: #{$padding-header--mobile};
     nav {
         display: flex;
         justify-content: space-between;
