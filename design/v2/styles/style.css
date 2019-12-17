@@ -28,7 +28,7 @@ main {
   margin: 5rem 2rem 0 2rem;
   color: white;
   max-width: 430px; }
-  .article--home h2 {
+  .article--home h1 {
     font-size: 2.5rem; }
 
 @media screen and (min-width: 930px) {
@@ -36,7 +36,7 @@ main {
     margin-top: 10rem;
     margin-left: 5rem;
     max-width: 430px; }
-    .article--home h2 {
+    .article--home h1 {
       font-size: 2.9rem; } }
 
 .background-img {
@@ -70,6 +70,8 @@ main {
 
 .content {
   background-color: #F2F2F2; }
+  .content.content-home {
+    background-color: transparent !important; }
 
 .form-group > * {
   display: block; }
