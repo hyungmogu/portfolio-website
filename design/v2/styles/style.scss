@@ -11,6 +11,16 @@ body {
     margin: 0;
 }
 
+.form-group {
+    input, textarea {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid black;
+        resize: none;
+        width: 100%;
+    }
+}
+
 main {
     height: calc(100vh - (#{$height-header--mobile} + #{$padding-header--mobile}*2));
     display: flex;

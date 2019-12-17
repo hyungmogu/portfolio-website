@@ -5,6 +5,13 @@ body {
   height: 100vh;
   margin: 0; }
 
+.form-group input, .form-group textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid black;
+  resize: none;
+  width: 100%; }
+
 main {
   height: calc(100vh - (1.4rem + 1.3rem*2));
   display: flex; }
