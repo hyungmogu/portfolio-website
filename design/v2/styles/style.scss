@@ -11,13 +11,13 @@ body {
     margin: 0;
 }
 
-.form-group {
-    input, textarea {
-        background-color: transparent;
-        border: none;
-        border-bottom: 1px solid black;
-        resize: none;
-        width: 100%;
+button[type=submit] {
+    width: 100%;
+}
+
+@media screen and (min-width: 930px) {
+    button[type=submit] {
+        width: initial;
     }
 }
 
@@ -134,16 +134,23 @@ main {
     }
 }
 
-
-
 .form-group {
     margin-bottom: 1rem;
+
+    & > * {
+        display: block;
+    }
+
     label {
         margin-bottom: 0.5rem;
     }
-    & > * {
-        display: block;
 
+    input, textarea {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid black;
+        resize: none;
+        width: 100%;
     }
 }
 

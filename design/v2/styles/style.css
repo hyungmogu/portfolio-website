@@ -5,12 +5,12 @@ body {
   height: 100vh;
   margin: 0; }
 
-.form-group input, .form-group textarea {
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid black;
-  resize: none;
+button[type=submit] {
   width: 100%; }
+
+@media screen and (min-width: 930px) {
+  button[type=submit] {
+    width: initial; } }
 
 main {
   height: calc(100vh - (1.4rem + 1.3rem*2));
@@ -94,10 +94,16 @@ main {
 
 .form-group {
   margin-bottom: 1rem; }
-  .form-group label {
-    margin-bottom: 0.5rem; }
   .form-group > * {
     display: block; }
+  .form-group label {
+    margin-bottom: 0.5rem; }
+  .form-group input, .form-group textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    resize: none;
+    width: 100%; }
 
 .header--mobile {
   background-color: white;
