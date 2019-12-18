@@ -10,7 +10,12 @@ button[type=submit] {
 
 @media screen and (min-width: 930px) {
   button[type=submit] {
+    margin-left: auto;
     width: initial; } }
+
+form {
+  display: flex;
+  flex-direction: column; }
 
 main {
   height: calc(100vh - (1.4rem + 1.3rem*2));
@@ -93,7 +98,7 @@ main {
     display: flex;
     flex-direction: row; }
   .content-contacts article {
-    width: 500px; } }
+    width: 60%; } }
 
 .form-group {
   margin-bottom: 1rem; }

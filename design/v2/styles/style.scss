@@ -17,8 +17,14 @@ button[type=submit] {
 
 @media screen and (min-width: 930px) {
     button[type=submit] {
+        margin-left: auto;
         width: initial;
     }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 main {
@@ -133,7 +139,7 @@ main {
         }
 
         article {
-            width: 500px;
+            width: 60%;
         }
     }
 }
