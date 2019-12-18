@@ -86,19 +86,30 @@ main {
 .content-home {
   background-color: transparent !important; }
 
-.content-contacts > div {
+.content-contacts > div,
+.content-about > div {
   display: flex;
   flex-direction: column; }
 
-.content-contacts h3 {
+.content-contacts h3,
+.content-about h3 {
   margin-top: 0; }
 
 @media screen and (min-width: 930px) {
-  .content-contacts > div {
+  .content-contacts > div,
+  .content-about > div {
     display: flex;
     flex-direction: row; }
-  .content-contacts article {
+  .content-contacts article,
+  .content-about article {
     width: 60%; } }
+
+.content-about h3 {
+  font-size: 2.5rem; }
+
+@media screen and (min-width: 930px) {
+  .content-about h3 {
+    font-size: 2.9rem; } }
 
 .form-group {
   margin-bottom: 1rem; }

@@ -120,7 +120,8 @@ main {
     background-color: transparent !important;
 }
 
-.content-contacts {
+.content-contacts,
+.content-about {
     & > div {
         display: flex;
         flex-direction: column;
@@ -132,7 +133,8 @@ main {
 }
 
 @media screen and (min-width: 930px) {
-    .content-contacts {
+    .content-contacts,
+    .content-about {
         & > div {
             display: flex;
             flex-direction: row;
@@ -140,6 +142,20 @@ main {
 
         article {
             width: 60%;
+        }
+    }
+}
+
+.content-about {
+    h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .content-about {
+        h3 {
+            font-size: 2.9rem;
         }
     }
 }
