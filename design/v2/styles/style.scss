@@ -119,6 +119,10 @@ main {
         display: flex;
         flex-direction: column;
     }
+
+    h3 {
+        margin-top: 0;
+    }
 }
 
 @media screen and (min-width: 930px) {
@@ -298,6 +302,14 @@ $total-margin-steps: 10;
 @for $i from 1 through $total-margin-steps {
     .mb-#{$i} {
         margin-bottom: $i * 0.25rem;
+    }
+
+    .ml-#{$i} {
+        margin-left: $i * 0.25rem;
+    }
+
+    .mr-#{$i} {
+        margin-right: $i * 0.25rem;
     }
 }
 
