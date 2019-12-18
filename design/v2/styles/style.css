@@ -80,8 +80,12 @@ main {
   .content.content-home {
     background-color: transparent !important; }
 
-.form-group > * {
-  display: block; }
+.form-group {
+  margin-bottom: 1rem; }
+  .form-group label {
+    margin-bottom: 0.5rem; }
+  .form-group > * {
+    display: block; }
 
 .header--mobile {
   background-color: white;
