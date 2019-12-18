@@ -77,8 +77,20 @@ main {
 
 .content {
   background-color: #F2F2F2; }
-  .content.content-home {
-    background-color: transparent !important; }
+
+.content-home {
+  background-color: transparent !important; }
+
+.content-contacts > div {
+  display: flex;
+  flex-direction: column; }
+
+@media screen and (min-width: 930px) {
+  .content-contacts > div {
+    display: flex;
+    flex-direction: row; }
+  .content-contacts article {
+    width: 500px; } }
 
 .form-group {
   margin-bottom: 1rem; }
