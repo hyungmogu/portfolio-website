@@ -111,6 +111,10 @@ main {
   .content-about h3 {
     font-size: 2.9rem; } }
 
+.content-works article {
+  display: flex;
+  flex-wrap: wrap; }
+
 .form-group {
   margin-bottom: 1rem; }
   .form-group > * {
@@ -226,6 +230,9 @@ main {
   bottom: 0;
   right: 0;
   z-index: 1; }
+
+.thumbnail {
+  margin: 1.5rem; }
 
 .mb-1 {
   margin-bottom: 0.25rem; }

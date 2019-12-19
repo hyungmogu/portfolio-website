@@ -160,6 +160,13 @@ main {
     }
 }
 
+.content-works {
+    article {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
 .form-group {
     margin-bottom: 1rem;
 
@@ -313,6 +320,10 @@ main {
     bottom: 0;
     right: 0;
     z-index: 1;
+}
+
+.thumbnail {
+    margin: 1.5rem;
 }
 
 // ----------
