@@ -2,6 +2,7 @@
   font-family: 'Lato', sans-serif; }
 
 body {
+  background-color: #F2F2F2;
   height: 100vh;
   margin: 0; }
 
@@ -18,7 +19,6 @@ form {
   flex-direction: column; }
 
 main {
-  height: calc(100vh - (1.4rem + 1.3rem*2));
   display: flex; }
   main .content {
     width: 100vw; }
@@ -79,9 +79,6 @@ main {
   color: #fff;
   background-color: black;
   border-color: black; }
-
-.content {
-  background-color: #F2F2F2; }
 
 .content-home {
   background-color: transparent !important; }

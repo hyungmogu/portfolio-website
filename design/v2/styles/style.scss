@@ -7,6 +7,7 @@ $width-header--primary-desktop: 14rem;
 }
 
 body {
+    background-color: #F2F2F2;
     height: 100vh;
     margin: 0;
 }
@@ -28,7 +29,6 @@ form {
 }
 
 main {
-    height: calc(100vh - (#{$height-header--mobile} + #{$padding-header--mobile}*2));
     display: flex;
 
     .content {
@@ -110,10 +110,6 @@ main {
     color: #fff;
     background-color: black;
     border-color: black;
-}
-
-.content {
-    background-color: #F2F2F2;
 }
 
 .content-home {
