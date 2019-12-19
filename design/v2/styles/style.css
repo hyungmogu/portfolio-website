@@ -139,6 +139,7 @@ main {
     display: none; } }
 
 .header--primary-desktop {
+  background-color: white;
   padding-top: calc(1.4rem + 1.3rem*2); }
   .header--primary-desktop .logo {
     margin-top: 3rem; }

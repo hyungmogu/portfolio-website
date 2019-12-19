@@ -201,6 +201,7 @@ main {
 }
 
 .header--primary-desktop {
+    background-color: white;
     padding-top: calc(#{$height-header--mobile} + #{$padding-header--mobile}*2);
     .logo {
         margin-top: 3rem;
