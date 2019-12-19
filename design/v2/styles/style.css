@@ -10,7 +10,7 @@ article {
 
 @media screen and (min-width: 930px) {
   article {
-    justify-content: space-between; } }
+    justify-content: initial; } }
 
 body {
   background-color: #F2F2F2;
