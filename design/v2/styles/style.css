@@ -144,7 +144,9 @@ main {
 .jumbotron {
   padding-top: 4rem;
   min-height: 14rem;
-  background-color: red; }
+  background-color: red;
+  background-image: url("https://hyungmogu-portfolio-site.s3-us-west-2.amazonaws.com/social-team-builder.png");
+  background-size: cover; }
   .jumbotron div {
     text-align: center; }
 
