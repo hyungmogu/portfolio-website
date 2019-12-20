@@ -40,7 +40,8 @@ main {
 
 @media screen and (min-width: 930px) {
   main {
-    height: 100vh; }
+    height: 100vh;
+    overflow-y: hidden; }
     main .content {
       width: calc(100vw - 14rem); }
     main .header--primary-desktop {
@@ -95,6 +96,10 @@ main {
 .btn--primary-outline {
   border-color: black;
   color: black; }
+
+@media screen and (min-width: 930px) {
+  .content {
+    overflow-y: scroll; } }
 
 .content-home {
   background-color: transparent !important; }
