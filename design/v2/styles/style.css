@@ -141,6 +141,9 @@ main {
     resize: none;
     width: 100%; }
 
+.images img {
+  width: 100%; }
+
 .jumbotron {
   padding-top: 4rem;
   min-height: 14rem;
@@ -435,3 +438,6 @@ main {
 
 .opened {
   display: initial; }
+
+.text-center {
+  text-align: center; }

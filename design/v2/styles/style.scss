@@ -206,6 +206,13 @@ main {
     }
 }
 
+.images {
+
+    img {
+        width: 100%;
+    }
+}
+
 .jumbotron {
     padding-top: 4rem;
     min-height: 14rem;
@@ -427,4 +434,8 @@ $total-padding-steps: 10;
 
 .opened {
     display: initial;
+}
+
+.text-center {
+    text-align: center;
 }
