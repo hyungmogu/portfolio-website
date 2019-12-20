@@ -222,11 +222,9 @@ main {
 }
 
 .jumbotron {
-    padding-top: 4rem;
-    min-height: 14rem;
-    background-color: red;
-    background-image: url('https://hyungmogu-portfolio-site.s3-us-west-2.amazonaws.com/social-team-builder.png');
-    background-size: cover;
+    padding-top: 2rem;
+    min-height: 16rem;
+
     div {
         text-align: center;
     }
@@ -234,15 +232,15 @@ main {
 
 @media screen and (min-width: 750px) {
     .jumbotron {
-        padding-top: 6rem;
+        padding-top: 4rem;
         min-height: 17rem;
     }
 }
 
 @media screen and (min-width: 930px) {
     .jumbotron {
-        padding-top: 7rem;
-        min-height: 19rem;
+        padding-top: 5rem;
+        min-height: 20rem;
     }
 }
 
