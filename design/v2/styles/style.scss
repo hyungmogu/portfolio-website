@@ -216,6 +216,20 @@ main {
     }
 }
 
+@media screen and (min-width: 750px) {
+    .jumbotron {
+        padding-top: 6rem;
+        min-height: 17rem;
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .jumbotron {
+        padding-top: 7rem;
+        min-height: 19rem;
+    }
+}
+
 .header--mobile {
     background-color: white;
     height: #{$height-header--mobile};
