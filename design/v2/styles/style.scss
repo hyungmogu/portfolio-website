@@ -417,6 +417,10 @@ $total-margin-steps: 10;
     .mr-#{$i} {
         margin-right: $i * 0.25rem;
     }
+
+    .mt-#{$i} {
+        margin-top: $i * 0.25rem;
+    }
 }
 
 $total-padding-steps: 10;
