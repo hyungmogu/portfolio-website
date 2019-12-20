@@ -84,7 +84,8 @@ main {
   border: 1px solid transparent;
   text-align: center;
   padding: .375rem .75rem;
-  border-radius: .25rem; }
+  border-radius: .25rem;
+  text-decoration: none; }
 
 .btn--primary {
   color: #fff;
@@ -135,6 +136,13 @@ main {
     border-bottom: 1px solid black;
     resize: none;
     width: 100%; }
+
+.jumbotron {
+  padding-top: 4rem;
+  min-height: 14rem;
+  background-color: red; }
+  .jumbotron div {
+    text-align: center; }
 
 .header--mobile {
   background-color: white;

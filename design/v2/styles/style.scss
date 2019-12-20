@@ -121,6 +121,7 @@ main {
     text-align: center;
     padding: .375rem .75rem;
     border-radius: .25rem;
+    text-decoration: none;
 }
 
 .btn--primary {
@@ -197,6 +198,16 @@ main {
         border-bottom: 1px solid black;
         resize: none;
         width: 100%;
+    }
+}
+
+.jumbotron {
+    padding-top: 4rem;
+    min-height: 14rem;
+    background-color: red;
+
+    div {
+        text-align: center;
     }
 }
 
