@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--META-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--STYLES-->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="design/v2/styles/font-awesome/all.css">
+
+        <link rel="stylesheet" href="design/v2/styles/style.css">
+    </head>
+    <body>
+        <header class="header--mobile">
+            <nav>
+                <div onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+                <div><strong>Hyungmo Gu</strong></div>
+                <div></div>
+            </nav>
+        </header>
+        <main role="main">
+            <header class="header--primary-desktop">
+                <img class="logo" src="https://placehold.it/200x200">
+                <nav class="menu menu--primary mb-4">
+                    <h3 class="mb-9"><a href="index.html">Hyungmo Gu</a></h3>
+                    <ul>
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="works.html">Works</a></li>
+                        <li class="mb-2"><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                <nav class="menu menu--social mb-4">
+                    <ul>
+                        <li><a class="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a class="icon" href="https://github.com/hyungmogu"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <div>Hyungmo Gu</div>
+                    <div class="small">Thank you for visiting!</div>
+                </nav>
+            </header>
+            <header class="header--primary-mobile">
+                <nav>
+                    <div onclick="toggleMenu()"><i class="fas fa-times"></i></div>
+                </nav>
+                <section>
+                    <img class="logo" src="https://placehold.it/200x200">
+                    <nav class="menu menu--primary mb-4">
+                        <h3 class="mb-9"><a href="#">Hyungmo Gu</a></h3>
+                        <ul>
+                            <li class="mb-2"><a href="index.html">Home</a></li>
+                            <li class="mb-2"><a href="about.html">About</a></li>
+                            <li class="mb-2"><a href="works.html">Works</a></li>
+                            <li class="mb-2"><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu menu--social mb-4">
+                        <ul>
+                            <li><a class="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="icon" href="https://github.com/hyungmogu"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                        <div>Hyungmo Gu</div>
+                        <div class="small">Thank you for visiting!</div>
+                    </nav>
+                </section>
+            </header>
+            <div class="content content-about">
+                <header class="header--secondary p-6">
+                    <h2>About</h2>
+                </header>
+                <div class="ml-4 mr-4">
+                    <article class="p-6">
+                        <h3>Hyungmo Gu</h3>
+                        <p> is a dedicated and energetic software developer with 2 years of industry experience living in Vancouver, Canada.</p>
+
+                        <p>Driven by his love to learn and create new applications, aside from the work hours, he can be found in Github pushing his latest works to repositories.</p>
+                    </article>
+                </div>
+            </div>
+        </main>
+        <div class="screen-overlay"></div>
+    </body>
+    <script>
+        let toggleMenu = function() {
+            let mobileMenu = (document.getElementsByClassName('header--primary-mobile'))[0];
+            let screenOverlay = (document.getElementsByClassName('screen-overlay'))[0];
+
+            // if clicked, then check for class 'opened'
+            if (mobileMenu && mobileMenu.classList.contains('opened')) {
+                mobileMenu.classList.remove('opened');
+                screenOverlay.classList.remove('opened');
+
+                return;
+            }
+            // if open, then remove 'opened'
+            // if not open, add 'opened'
+            mobileMenu.classList.add('opened');
+            screenOverlay.classList.add('opened');
+        }
+
+    </script>
+</html>
