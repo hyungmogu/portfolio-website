@@ -2,6 +2,6 @@ import main.views as views
 from django.urls import path
 
 urlpatterns = [
-    path('', views.HomeView.as_view(), name='home'),
-    path('works/<int:pk>', views.WorksView.as_view(), name='works'),
+    path('works/<int:pk>', views.WorksDetailView.as_view(), name='works_detail'),
+    path('works', views.WorksView.as_view(), name='works'),
 ]

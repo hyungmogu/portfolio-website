@@ -5,18 +5,22 @@ from django.core.mail import send_mail #this is temporary
 
 from . import models
 
+
 class HomeView(TemplateView):
+    template_name = 'main/home.html'
+
+class WorksView(TemplateView):
     models=models.Project
-    template_name = 'main/projects.html'
+    template_name = 'main/works.html'
 
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        projects = models.Project.objects.all().order_by('-date_created')
-        context['projects'] = projects
+    # def get_context_data(self, **kwargs):
+    #     context = super().get_context_data(**kwargs)
+    #     projects = models.Project.objects.all().order_by('-date_created')
+    #     context['projects'] = projects
 
-        return context
+    #     return context
 
-class WorksView(DetailView):
+class WorksDetailView(DetailView):
     models=models.Project
     template_name = 'main/works_detail.html'
 
