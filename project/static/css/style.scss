@@ -396,6 +396,12 @@ main {
     cursor: pointer;
     img {
         margin-bottom: 1rem;
+        width: 12.5rem;
+        height: 8rem;
+        object-fit: cover;
+    }
+    div {
+        width: 12.5rem;
     }
 }
 
