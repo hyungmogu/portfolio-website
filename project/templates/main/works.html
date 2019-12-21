@@ -8,34 +8,15 @@
         </header>
         <div>
             <article>
-                <a class="thumbnail" href="works_detail.html">
-                    <img src="http://placehold.it/200x200">
-                    <div>
-                        <div class="small">August 21st, 2019</div>
-                        <h4>Title</h4>
-                    </div>
-                </a>
-                <a class="thumbnail" href="works_detail.html">
-                    <img src="http://placehold.it/200x200">
-                    <div>
-                        <div class="small">August 21st, 2019</div>
-                        <h4>Title</h4>
-                    </div>
-                </a>
-                <a class="thumbnail" href="works_detail.html">
-                    <img src="http://placehold.it/200x200">
-                    <div>
-                        <div class="small">August 21st, 2019</div>
-                        <h4>Title</h4>
-                    </div>
-                </a>
-                <a class="thumbnail" href="works_detail.html">
-                    <img src="http://placehold.it/200x200">
-                    <div>
-                        <div class="small">August 21st, 2019</div>
-                        <h4>Title</h4>
-                    </div>
-                </a>
+                {% for work in works %}
+                    <a class="thumbnail" href="{% url 'works_detail' %}">
+                        <img src="{{ work.image_main|default_if_none:'http://via.placeholder.com/350x200' }}" alt="{{ project.title }}">
+                        <div>
+                            <div class="small">{{ work.date_created | date:'N jS, Y' }}</div>
+                            <h4>{{ work.title }}</h4>
+                        </div>
+                    </a>
+                {% endfor %}
             </article>
         </div>
     </div>
