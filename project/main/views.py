@@ -35,8 +35,8 @@ class WorksDetailView(DetailView):
 class AboutView(DetailView):
     template_name = 'main/about.html'
 
-    # def get(self, request, pk):
-    #     return render(request, self.template_name)
+    def get(self, request):
+        return render(request, self.template_name)
 
 class ContactView(DetailView):
     template_name = 'main/contacts.html'
