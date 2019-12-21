@@ -31,3 +31,9 @@ class WorksDetailView(DetailView):
 
         return render(request, self.template_name, {
             'project': project})
+
+class AboutView(DetailView):
+    template_name = 'main/about.html'
+
+    # def get(self, request, pk):
+    #     return render(request, self.template_name)
