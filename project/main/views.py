@@ -16,9 +16,9 @@ class HomeView(TemplateView):
 
         return context
 
-class ProjectView(DetailView):
+class WorksView(DetailView):
     models=models.Project
-    template_name = 'main/projects_detail.html'
+    template_name = 'main/works_detail.html'
 
     def get(self, request, pk):
         project = get_object_or_404(
