@@ -1,62 +1,92 @@
-{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'css/font-awesome/all.css' %}">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}" crossorigin="anonymous">
+        <!--META-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--STYLES-->
+        <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="design/v2/styles/font-awesome/all.css">
+
+        <link rel="stylesheet" href="design/v2/styles/style.css">
     </head>
     <body>
-        <header>
-            <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
-                <div class="container">
-                    <a class="navbar-brand" href="/">Hyungmo Gu</a>
-                    <div class="justify-content-end">
-                        <ul class="nav">
-                            <li class="nav-item"><a href="/">Home</a></li>
-                        </ul>
-                    </div>
-                </div>
+        <header class="header--mobile">
+            <nav>
+                <div onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
+                <div><strong>Hyungmo Gu</strong></div>
+                <div></div>
             </nav>
         </header>
         <main role="main">
-            {% block body_content %}{% endblock %}
-        </main>
-        <footer>
-            <section class="contact text-center bg-light">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 offset-md-2">
-                            <div class="m-3">
-                                <h2>Get in Touch</h2>
-                                <form method="POST" action="{% url 'api:email' %}">
-                                    {% csrf_token %}
-                                    <div class="form-group">
-                                        <input type="email" name="email" class="form-control" id="email-address" placeholder="Email Address">
-                                    </div>
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" rows="5" id="email-content" placeholder="Message"></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-block btn-success">Submit</button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="outro">
-                <div class="m-3 text-center">
-                    <div class="d-flex justify-content-center mb-2">
-                        <a class="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><i class="fab fa-linkedin-in"></i></a>
-                        <a class="icon" href="https://github.com/hyungmogu"><i class="fab fa-github"></i></a>
-                    </div>
+            <header class="header--primary-desktop">
+                <img class="logo" src="https://placehold.it/200x200">
+                <nav class="menu menu--primary mb-4">
+                    <h3 class="mb-9"><a href="#">Hyungmo Gu</a></h3>
+                    <ul>
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="about.html">About</a></li>
+                        <li class="mb-2"><a href="works.html">Works</a></li>
+                        <li class="mb-2"><a href="contacts.html">Contacts</a></li>
+                    </ul>
+                </nav>
+                <nav class="menu menu--social mb-4">
+                    <ul>
+                        <li><a class="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a class="icon" href="https://github.com/hyungmogu"><i class="fab fa-github"></i></a></li>
+                    </ul>
                     <div>Hyungmo Gu</div>
                     <div class="small">Thank you for visiting!</div>
-                </div>
-            </section>
-
-        </footer>
+                </nav>
+            </header>
+            <header class="header--primary-mobile">
+                <nav>
+                    <div onclick="toggleMenu()"><i class="fas fa-times"></i></div>
+                </nav>
+                <section>
+                    <img class="logo" src="https://placehold.it/200x200">
+                    <nav class="menu menu--primary mb-4">
+                        <h3 class="mb-9"><a href="#">Hyungmo Gu</a></h3>
+                        <ul>
+                            <li class="mb-2"><a href="index.html">Home</a></li>
+                            <li class="mb-2"><a href="about.html">About</a></li>
+                            <li class="mb-2"><a href="works.html">Works</a></li>
+                            <li class="mb-2"><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="menu menu--social mb-4">
+                        <ul>
+                            <li><a class="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a class="icon" href="https://github.com/hyungmogu"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                        <div>Hyungmo Gu</div>
+                        <div class="small">Thank you for visiting!</div>
+                    </nav>
+                </section>
+            </header>
+            <div class="content">
+                {% block body_content %}{% endblock %}
+            </div>
+        </main>
+        <div class="screen-overlay"></div>
     </body>
-</html>
+    <script>
+        let toggleMenu = function() {
+            let mobileMenu = (document.getElementsByClassName('header--primary-mobile'))[0];
+            let screenOverlay = (document.getElementsByClassName('screen-overlay'))[0];
 
+            // if clicked, then check for class 'opened'
+            if (mobileMenu && mobileMenu.classList.contains('opened')) {
+                mobileMenu.classList.remove('opened');
+                screenOverlay.classList.remove('opened');
+
+                return;
+            }
+            // if open, then remove 'opened'
+            // if not open, add 'opened'
+            mobileMenu.classList.add('opened');
+            screenOverlay.classList.add('opened');
+        }
+
+    </script>
+</html>
