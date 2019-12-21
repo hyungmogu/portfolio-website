@@ -13,12 +13,12 @@ class WorksView(TemplateView):
     models=models.Project
     template_name = 'main/works.html'
 
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     projects = models.Project.objects.all().order_by('-date_created')
-    #     context['projects'] = projects
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        projects = models.Project.objects.all().order_by('-date_created')
+        context['projects'] = projects
 
-    #     return context
+        return context
 
 class WorksDetailView(DetailView):
     models=models.Project
