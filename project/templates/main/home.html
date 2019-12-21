@@ -1,9 +1,9 @@
-
 {% extends 'layout.html' %}
+{% load static %}
 
 {% block body_content %}
     <div class="content content-home">
-        <div class="background-img"></div>
+        <div class="background-img" style="background-image: url({% static 'img/cover-page.jpg' %})"></div>
         <article class="article--home">
             <h1 class="title">Hello,</h1>
             <h1>Welcome to the portfolio site of Hyungmo Gu</h1>
