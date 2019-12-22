@@ -370,20 +370,46 @@ main {
     }
     a {
         text-decoration: none;
-        color: black;
     }
 
     &.menu--primary {
         text-align: center;
+
+        a {
+            color: black;
+        }
+    }
+
+    &.menu--primary-home {
+        a {
+            color: white;
+        }
     }
 
     &.menu--social {
         text-align: center;
+        color: black;
         ul {
             display: flex;
             justify-content: center;
 
             margin-bottom: 0.5rem;
+        }
+    }
+
+    &.menu--social-home {
+        a {
+            color: white;
+            border-color: white;
+        }
+
+        a:hover {
+            color: black;
+            background-color:white;
+        }
+
+        ul {
+            display:flex;
         }
     }
 }
@@ -397,24 +423,6 @@ main {
         }
     }
 }
-
-
-.menu--social-home {
-    a {
-        color: white;
-        border-color: white;
-    }
-
-    a:hover {
-        color: black;
-        background-color:white;
-    }
-
-    ul {
-        display:flex;
-    }
-}
-
 
 
 .screen-overlay {
