@@ -60,7 +60,7 @@ main {
     main {
         height: 100vh;
         overflow-y: hidden;
-        margin-top: 0rem;
+        padding-top: 0rem;
 
         .content {
             width: calc(100vw - #{$width-header--primary-desktop});
@@ -302,7 +302,7 @@ main {
     }
 
     & > section {
-        padding: 0 1.5rem 1.5rem 1.5rem;
+        padding: 1.5rem;
         display: flex;
         flex-direction: column;
         height: calc(100vh - (#{$height-header--mobile} + #{$padding-header--mobile}*2));
@@ -379,12 +379,21 @@ main {
 
     &.menu--social {
         text-align: center;
-        margin-top: auto;
         ul {
             display: flex;
             justify-content: center;
 
             margin-bottom: 0.5rem;
+        }
+    }
+}
+
+@media screen and (min-width: 930px) {
+    .menu {
+        &.menu--social {
+            text-align: center;
+            margin-top: auto;
+
         }
     }
 }
