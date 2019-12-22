@@ -273,6 +273,17 @@ main {
     text-align: center;
     margin-top: auto; } }
 
+.menu--social-home a {
+  color: white;
+  border-color: white; }
+
+.menu--social-home a:hover {
+  color: black;
+  background-color: white; }
+
+.menu--social-home ul {
+  display: flex; }
+
 .screen-overlay {
   display: none;
   background-color: black;

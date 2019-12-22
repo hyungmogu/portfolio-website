@@ -145,12 +145,6 @@ main {
     background-color: transparent !important;
 }
 
-@media screen and (min-width: 930px) {
-    .content-home {
-
-    }
-}
-
 .content-contacts,
 .content-about {
     & > div {
@@ -403,6 +397,25 @@ main {
         }
     }
 }
+
+
+.menu--social-home {
+    a {
+        color: white;
+        border-color: white;
+    }
+
+    a:hover {
+        color: black;
+        background-color:white;
+    }
+
+    ul {
+        display:flex;
+    }
+}
+
+
 
 .screen-overlay {
     display: none;
