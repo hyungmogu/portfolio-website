@@ -265,6 +265,10 @@ main {
 @media screen and (min-width: 930px) {
     .header--mobile {
         display: none;
+
+        &.opened {
+            display: none !important;
+        }
     }
 }
 
@@ -341,8 +345,8 @@ main {
 }
 
 .logo {
-    width: 9rem;
-    height: 9rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
 }
 
@@ -396,6 +400,12 @@ main {
     cursor: pointer;
     img {
         margin-bottom: 1rem;
+        width: 12.5rem;
+        height: 8rem;
+        object-fit: cover;
+    }
+    div {
+        width: 12.5rem;
     }
 }
 

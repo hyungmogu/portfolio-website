@@ -180,7 +180,9 @@ main {
 
 @media screen and (min-width: 930px) {
   .header--mobile {
-    display: none; } }
+    display: none; }
+    .header--mobile.opened {
+      display: none !important; } }
 
 .header--primary-desktop {
   background-color: white;
@@ -236,8 +238,8 @@ main {
     margin-right: 0; }
 
 .logo {
-  width: 9rem;
-  height: 9rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%; }
 
 .menu ul {
@@ -280,7 +282,12 @@ main {
   color: black;
   cursor: pointer; }
   .thumbnail img {
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    width: 12.5rem;
+    height: 8rem;
+    object-fit: cover; }
+  .thumbnail div {
+    width: 12.5rem; }
 
 @media screen and (min-width: 930px) {
   .thumbnail {
