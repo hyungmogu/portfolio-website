@@ -225,7 +225,6 @@ main {
 .icon {
   width: 25px;
   height: 25px;
-  margin: 0 0.25em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,10 +236,6 @@ main {
   .icon:hover {
     background-color: black;
     color: white; }
-  .icon:first {
-    margin-left: 0; }
-  .icon:last-child {
-    margin-right: 0; }
 
 .logo {
   width: 8rem;
