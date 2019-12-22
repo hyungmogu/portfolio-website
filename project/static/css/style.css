@@ -27,7 +27,7 @@ form {
 
 main {
   display: flex;
-  margin-top: 3.7rem; }
+  padding-top: 3.7rem; }
   main .content {
     width: 100vw; }
   main .header--primary-desktop {
