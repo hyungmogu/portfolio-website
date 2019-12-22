@@ -270,6 +270,13 @@ main {
     text-align: center;
     margin-top: auto; } }
 
+.messages ul {
+  margin: 0;
+  padding: 0; }
+
+.messages li {
+  list-style-type: none; }
+
 .screen-overlay {
   display: none;
   background-color: black;
