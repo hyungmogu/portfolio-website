@@ -1,6 +1,6 @@
 $height-header--mobile: 1.4rem;
 $padding-header--mobile: 1.3rem;
-$width-header--primary-desktop: 14rem;
+$width-header--primary-desktop: 13rem;
 
 $thumbnail--width: 15.5rem;
 
@@ -388,14 +388,6 @@ main {
         &.menu--social {
             text-align: center;
             margin-top: auto;
-        }
-
-        &.menu--primary-home {
-            display: none;
-        }
-
-        &.menu--social-home {
-            display: none;
         }
     }
 }

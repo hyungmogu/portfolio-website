@@ -5,6 +5,16 @@
             <h2>Contacts</h2>
         </header>
         <div class="ml-4 mr-4">
+            {% if messages %}
+                <ul class="messages">
+                    {% for message in messages %}
+                        {% if 'email' in message.tags %}
+                        <li>{{ message }}</li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
+            {% endif %}
+
             <article class="p-6">
                 <h3>Hire Moe!</h3>
                 <form method="POST" action="{% url 'api:email' %}">

@@ -1,8 +1,11 @@
+from django.contrib import messages
 from django.core.mail import send_mail
 from django.http import Http404
+
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
+
 
 class ForwardEmail(APIView):
     def post(self, request, format=None):
@@ -18,5 +21,11 @@ class ForwardEmail(APIView):
             recipient_list = ['website.guhyungm7@gmail.com',],
             fail_silently = False
         )
+
+        messages.add_message(
+            request,
+            messages.SUCCESS,
+            'Email submitted successfully!',
+            extra_tags='email')
 
         return Response(request.data, status=status.HTTP_200_OK)
