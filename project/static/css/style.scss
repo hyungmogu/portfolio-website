@@ -47,6 +47,7 @@ form {
 
 main {
     display: flex;
+    margin-top: 3.7rem;
 
     .content {
         width: 100vw;
@@ -63,6 +64,8 @@ main {
     main {
         height: 100vh;
         overflow-y: hidden;
+        margin-top: 0rem;
+
         .content {
             width: calc(100vw - #{$width-header--primary-desktop});
         }
@@ -255,6 +258,11 @@ main {
     background-color: white;
     height: #{$height-header--mobile};
     padding: #{$padding-header--mobile};
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
 
     a {
         text-decoration: none;

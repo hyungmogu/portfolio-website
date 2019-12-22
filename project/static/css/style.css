@@ -30,7 +30,8 @@ form {
   flex-direction: column; }
 
 main {
-  display: flex; }
+  display: flex;
+  margin-top: 3.7rem; }
   main .content {
     width: 100vw; }
   main .header--primary-desktop {
@@ -41,7 +42,8 @@ main {
 @media screen and (min-width: 930px) {
   main {
     height: 100vh;
-    overflow-y: hidden; }
+    overflow-y: hidden;
+    margin-top: 0rem; }
     main .content {
       width: calc(100vw - 14rem); }
     main .header--primary-desktop {
@@ -172,7 +174,11 @@ main {
 .header--mobile {
   background-color: white;
   height: 1.4rem;
-  padding: 1.3rem; }
+  padding: 1.3rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; }
   .header--mobile a {
     text-decoration: none;
     color: black; }
