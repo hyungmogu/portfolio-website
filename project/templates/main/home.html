@@ -5,16 +5,19 @@
     <div class="content content-home">
         <div class="background-img" style="background-image: url({% static 'img/cover-page.jpg' %})"></div>
         <article class="article--home">
-            <h1 class="title">Hello,</h1>
-            <h1>Welcome to the portfolio site of Hyungmo Gu</h1>
-            <strong>A vancouver based software developer who loves to learn, create new app, and push codes to github with his love</strong>
+            <section class="mb-8">
+                <h1 class="title">Hello,</h1>
+                <h1>Welcome to the portfolio site of Hyungmo Gu</h1>
+                <strong>A vancouver based software developer who loves to learn, create new app, and push codes to github with his love</strong>
+            </section>
 
-            <nav class="menu menu--social-home mb-8 mt-8">
+            <nav class="menu menu--social-home mb-4">
                 <ul>
                     <li><a class="icon" href="https://www.linkedin.com/in/hyungmo-gu/"><i class="fab fa-linkedin-in"></i></a></li>
                     <li><a class="icon" href="https://github.com/hyungmogu"><i class="fab fa-github"></i></a></li>
                 </ul>
             </nav>
+
             <nav class="menu menu--primary-home small mb-4">
                 <ul>
                     <li class="mb-2"><a href="{% url 'home' %}">Home</a></li>
