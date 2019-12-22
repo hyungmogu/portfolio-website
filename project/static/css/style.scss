@@ -2,18 +2,14 @@ $height-header--mobile: 1.4rem;
 $padding-header--mobile: 1.3rem;
 $width-header--primary-desktop: 14rem;
 
+$thumbnail--width: 15.5rem;
+
 * {
     font-family: 'Lato', sans-serif;
 }
 
 article {
     justify-content: space-evenly;
-}
-
-@media screen and (min-width: 750px) {
-    article {
-        justify-content: space-between ;
-    }
 }
 
 @media screen and (min-width: 930px) {
@@ -423,20 +419,37 @@ main {
     cursor: pointer;
     img {
         margin-bottom: 1rem;
-        width: 12.5rem;
-        height: 8rem;
+        width: #{$thumbnail--width};
+        height: 11rem;
         object-fit: cover;
     }
     div {
-        width: 12.5rem;
+        width: #{$thumbnail--width};
     }
 }
 
 @media screen and (min-width: 930px) {
     .thumbnail {
+        width: calc(50% - 3rem);
         text-align: inherit;
     }
 }
+
+@media screen and (min-width: 1050px) {
+    .thumbnail {
+        width: calc(33.333% - 3rem);
+        text-align: inherit;
+    }
+}
+
+
+@media screen and (min-width: 1330px) {
+    .thumbnail {
+        width: calc(25% - 3rem);
+        text-align: inherit;
+    }
+}
+
 
 // ----------
 // Modifiers
