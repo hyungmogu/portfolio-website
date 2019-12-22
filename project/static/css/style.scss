@@ -410,7 +410,14 @@ main {
         &.menu--social {
             text-align: center;
             margin-top: auto;
+        }
 
+        &.menu--primary-home {
+            display: none;
+        }
+
+        &.menu--social-home {
+            display: none;
         }
     }
 }

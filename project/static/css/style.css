@@ -282,7 +282,11 @@ main {
 @media screen and (min-width: 930px) {
   .menu.menu--social {
     text-align: center;
-    margin-top: auto; } }
+    margin-top: auto; }
+  .menu.menu--primary-home {
+    display: none; }
+  .menu.menu--social-home {
+    display: none; } }
 
 .screen-overlay {
   display: none;
