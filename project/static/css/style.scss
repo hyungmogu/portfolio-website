@@ -255,6 +255,12 @@ main {
     background-color: white;
     height: #{$height-header--mobile};
     padding: #{$padding-header--mobile};
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
     nav {
         display: flex;
         justify-content: space-between;
