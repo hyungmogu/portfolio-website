@@ -250,34 +250,20 @@ main {
   list-style-type: none; }
 
 .menu a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 .menu.menu--primary {
   text-align: center; }
   .menu.menu--primary a {
     color: black; }
 
-.menu.menu--primary-home a {
-  color: white; }
-
 .menu.menu--social {
-  text-align: center;
-  color: black; }
+  text-align: center; }
   .menu.menu--social ul {
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem; }
-
-.menu.menu--social-home a {
-  color: white;
-  border-color: white; }
-
-.menu.menu--social-home a:hover {
-  color: black;
-  background-color: white; }
-
-.menu.menu--social-home ul {
-  display: flex; }
 
 @media screen and (min-width: 930px) {
   .menu.menu--social {
