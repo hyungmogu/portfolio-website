@@ -191,7 +191,7 @@ main {
   background-color: white;
   padding-top: calc(1.4rem + 1.3rem*2); }
   .header--primary-desktop .logo {
-    margin-top: 3rem; }
+    margin-top: 2.5rem; }
 
 .header--primary-mobile {
   display: none;
