@@ -449,6 +449,10 @@ main {
     div {
         width: #{$thumbnail--width};
     }
+
+    & > div {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (min-width: 930px) {

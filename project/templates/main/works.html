@@ -10,10 +10,12 @@
             <article>
                 {% for project in projects %}
                     <a class="thumbnail" href="{% url 'works_detail' pk=project.pk  %}">
-                        <img src="{{ project.image_main|default_if_none:'http://via.placeholder.com/350x200' }}" alt="{{ project.title }}">
                         <div>
-                            <div class="small">{{ project.date_created | date:'N jS, Y' }}</div>
-                            <h4>{{ project.title }}</h4>
+                            <img src="{{ project.image_main|default_if_none:'http://via.placeholder.com/350x200' }}" alt="{{ project.title }}">
+                            <div>
+                                <div class="small">{{ project.date_created | date:'N jS, Y' }}</div>
+                                <h4>{{ project.title }}</h4>
+                            </div>
                         </div>
                     </a>
                 {% endfor %}
