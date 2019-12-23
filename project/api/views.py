@@ -1,6 +1,7 @@
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.http import Http404
+from django.shortcuts import render
 
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -28,4 +29,4 @@ class ForwardEmail(APIView):
             'Email submitted successfully!',
             extra_tags='email')
 
-        return Response(request.data, status=status.HTTP_200_OK)
+        return render(request, "main/contacts.html")
