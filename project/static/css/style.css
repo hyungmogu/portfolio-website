@@ -2,7 +2,10 @@
   font-family: 'Lato', sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
+  a.dotted {
+    border-bottom: 1px dotted black; }
 
 article {
   justify-content: space-evenly; }
