@@ -1,6 +1,9 @@
 * {
   font-family: 'Lato', sans-serif; }
 
+a {
+  text-decoration: none; }
+
 article {
   justify-content: space-evenly; }
 
