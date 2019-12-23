@@ -6,8 +6,8 @@
         </header>
         <div class="ml-4 mr-4">
             <article class="p-6">
-                <div class="messages mb-8">
-                    {% if messages %}
+                {% if messages %}
+                    <div class="messages mb-8">
                         <ul>
                             {% for message in messages %}
                                 {% if 'email' in message.tags %}
@@ -15,8 +15,9 @@
                                 {% endif %}
                             {% endfor %}
                         </ul>
-                    {% endif %}
-                </div>
+                    </div>
+                {% endif %}
+
                 <h3>Hire Moe!</h3>
                 <form method="POST" action="{% url 'api:email' %}">
                     {% csrf_token %}
